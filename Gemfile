@@ -40,7 +40,12 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin]
 group :development, :test do
 gem 'sqlite3'
 gem 'rspec-rails', '2.11.0'
+gem "minitest"
+gem 'guard-rspec'
 end
 group :test do
 gem 'capybara', '1.1.2'
+gem 'rb-fchange'
+gem 'rb-notifu'
+gem 'win32console'
 end
