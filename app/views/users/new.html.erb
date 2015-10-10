@@ -1,21 +1,19 @@
 <% provide(:title,'Sign UP')%>
 <h1 class="center">Sign Up</h1>
+<div>  </div>
 <div class="row col-md-9">
 	<div class="form-group form-horizontal">
 	<%= form_for(@user) do |f|%>
 			<%= render 'shared/error_messages'%>
 			<%= f.label :name%>
 			<%= f.text_field :name, class: "form-control"%>
-			<span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"></span>
 			<%=f.label :email %>
 			<%= f.text_field :email, class: "form-control"%>
-			<span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"></span>
 			<%= f.label :password%>
 			<%= f.password_field :password, class: "form-control"%>
-			<span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"></span>
 			<%= f. label :password_confirmation, "Confirmation"%>
 			<%= f.password_field :password_confirmation, class: "form-control"%>
-			<span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"></span>
+			<br>
 			<%= f. submit "Create my account", class: "btn btn-large btn-primary" %>
 
 	<%end%>
