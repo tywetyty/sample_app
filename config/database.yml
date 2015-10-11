@@ -23,5 +23,5 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: my_app_production
+  database: db/my_app_production
   host: localhost
