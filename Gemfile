@@ -4,7 +4,7 @@ source 'https://ruby.taobao.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.8'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 gem 'bootstrap-sass'
@@ -44,10 +44,15 @@ gem 'rspec-rails', '2.11.0'
 gem "minitest"
 gem 'guard-rspec'
 gem 'annotate'
+gem 'sqlite3'
 end
 group :test do
 gem 'capybara', '1.1.2'
 gem 'rb-fchange'
 gem 'rb-notifu'
 gem 'win32console'
+end
+group :production  do
+	gem 'pg'
+	gem 'rails_12factor'
 end
